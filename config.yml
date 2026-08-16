@@ -1,4 +1,4 @@
-baseURL: 'https://bobo861.pages.dev'
+baseURL: 'https://my-blog-ef1.pages.dev'
 title: '我的博客'
 
 paginate: 5
@@ -20,7 +20,7 @@ minify:
 
 params:
   env: production
-  title: '我的博客'
+  title: 'bobo861'
   description: '这是我的个人博客'
   author: 'bobo861'
   images: ['opengraph.webp']
