@@ -1,0 +1,56 @@
+/* 桌面端：目录固定在右侧 */
+@media screen and (min-width: 1280px) {
+    .toc {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        width: 260px;
+        max-height: calc(100vh - 140px);
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        z-index: 100;
+    }
+    
+    .toc::-webkit-scrollbar {
+        width: 4px;
+    }
+    .toc::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 2px;
+    }
+    
+    /* 目录链接样式 */
+    .toc a {
+        color: #555;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        padding: 4px 0;
+        transition: color 0.2s;
+    }
+    .toc a:hover {
+        color: #000;
+    }
+    .toc #TableOfContents ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .toc #TableOfContents ul ul {
+        padding-left: 16px;
+    }
+}
+
+/* 移动端：保持默认顶部目录 */
+@media screen and (max-width: 1279px) {
+    .toc {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
