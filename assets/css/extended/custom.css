@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ===== 全局字体设置 ===== */
+body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-size: 16.5px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+}
+
+/* 代码字体 */
+code, pre, .highlight, kbd {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+}
+
+/* 标题加粗 */
+.post-content h1, 
+.post-content h2, 
+.post-content h3, 
+.post-content h4,
+.post-entry h2, 
+.page-header h1 {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+/* 正文两端对齐，阅读更舒服 */
+.post-content p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+}
+
 /* ===== 全局背景图片 ===== */
 body {
     background-image: url('/images/bg.jpg');
@@ -8,23 +41,35 @@ body {
     min-height: 100vh;
 }
 
-/* ===== 亮色模式：白色毛玻璃卡片 ===== */
-.post-content,
-.post-entry {
+/* ===== 不居中：内容占满宽度 ===== */
+.main {
+    max-width: none !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 60px;
+}
+
+.post-content {
+    max-width: none !important;
+    width: 100%;
     background: rgba(255, 255, 255, 0.92) !important;
     backdrop-filter: blur(12px);
     border-radius: 16px;
+    padding: 40px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.post-content {
-    padding: 40px;
-}
-
 .post-entry {
+    max-width: none !important;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
     padding: 24px;
     margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -33,7 +78,17 @@ body {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== 暗色模式：深色卡片 + 浅色文字（强制覆盖）===== */
+/* 首页文章标题大一点 */
+.post-entry .entry-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ===== 暗色模式 ===== */
+.dark body {
+    background-image: url('/images/bg.jpg');
+}
+
 .dark .post-content,
 .dark .post-entry {
     background: rgba(28, 28, 38, 0.96) !important;
@@ -60,7 +115,7 @@ body {
     color: #6cb4ff !important;
 }
 
-/* ===== 右侧目录（桌面端固定）===== */
+/* ===== 右侧目录（桌面端）===== */
 @media screen and (min-width: 1280px) {
     .toc {
         position: fixed;
@@ -107,7 +162,6 @@ body {
     }
 }
 
-/* 暗色模式目录 */
 .dark .toc {
     background: rgba(35, 35, 48, 0.96) !important;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -121,7 +175,7 @@ body {
     color: #ffffff !important;
 }
 
-/* ===== 强制隐藏底部社交分享图标（CSS 兜底）===== */
+/* ===== 强制隐藏底部社交图标 ===== */
 .share-buttons,
 .post-footer .share-buttons,
 .social-icons,
@@ -130,11 +184,14 @@ body {
     display: none !important;
 }
 
-/* ===== 移动端：目录恢复默认 ===== */
+/* ===== 移动端适配 ===== */
 @media screen and (max-width: 1279px) {
     .toc {
         position: static;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .main {
+        padding: 0 20px;
     }
 }
