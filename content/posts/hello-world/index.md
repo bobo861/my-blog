@@ -1,10 +1,7 @@
 ---
 title: "Hello World"
-summary: ""
 date: 2026-08-16T15:27:25+08:00
 lastmod: 2026-08-16T15:27:25+08:00
-categories:
-tags:
 comments: true
 ShowToc: true
 TocOpen: true
