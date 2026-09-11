@@ -2,17 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
+    <loc>https://my-blog-ef1.pages.dev/categories/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/tags/llm/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/posts/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/tags/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/tags/transformer/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/posts/transformer-notes/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/categories/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/</loc>
+    <lastmod>2026-09-05T23:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://my-blog-ef1.pages.dev/posts/hello-world/</loc>
     <lastmod>2026-08-16T15:27:25+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-08-16T15:27:25+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-16T15:27:25+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

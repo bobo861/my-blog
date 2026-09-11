@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>我的博客</title>
-    <link>https://my-blog-ef1.pages.dev/</link>
-    <description>Recent content on 我的博客</description>
+    <title>深度学习 on 我的博客</title>
+    <link>https://my-blog-ef1.pages.dev/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 深度学习 on 我的博客</description>
     <image>
       <title>我的博客</title>
       <url>https://my-blog-ef1.pages.dev/opengraph.webp</url>
@@ -12,28 +12,13 @@
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 05 Sep 2026 23:30:00 +0800</lastBuildDate>
-    <atom:link href="https://my-blog-ef1.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://my-blog-ef1.pages.dev/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transformer 论文学习笔记（Attention Is All You Need）</title>
       <link>https://my-blog-ef1.pages.dev/posts/transformer-notes/</link>
       <pubDate>Sat, 05 Sep 2026 23:30:00 +0800</pubDate>
       <guid>https://my-blog-ef1.pages.dev/posts/transformer-notes/</guid>
       <description>以初学者视角梳理 Transformer：RNN 的三个困境、Self-Attention 的核心思想、Encoder-Decoder 架构，以及 Q/K/V 与位置编码。</description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>https://my-blog-ef1.pages.dev/posts/hello-world/</link>
-      <pubDate>Sun, 16 Aug 2026 15:27:25 +0800</pubDate>
-      <guid>https://my-blog-ef1.pages.dev/posts/hello-world/</guid>
-      <description>&lt;p&gt;这是我的第一篇博客文章！&lt;/p&gt;
-&lt;h2 id=&#34;关于这个博客&#34;&gt;关于这个博客&lt;/h2&gt;
-&lt;p&gt;我使用 Hugo + PaperMod 主题搭建了这个博客，并部署在 Cloudflare Pages 上。&lt;/p&gt;
-&lt;h2 id=&#34;未来计划&#34;&gt;未来计划&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;记录学习笔记&lt;/li&gt;
-&lt;li&gt;分享技术文章&lt;/li&gt;
-&lt;li&gt;记录生活点滴&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
