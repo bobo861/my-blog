@@ -1,0 +1,23 @@
+/* ===== 旁注块 =====
+   笔记里用无语言的围栏块（``` 直接换行）写的一大段说明，
+   由 layouts/_default/_markup/render-codeblock.html 渲染成 .note。
+   pre-wrap 保留原来的换行和缩进。 */
+.post-content .note {
+    background: rgba(108, 180, 255, 0.07);
+    border: 1px solid rgba(108, 180, 255, 0.22);
+    border-left: 4px solid #4a9eff;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 1.2em 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.95em;
+    line-height: 1.8;
+    color: #3d4a57;
+}
+
+.dark .post-content .note {
+    background: rgba(108, 180, 255, 0.08);
+    border-color: rgba(108, 180, 255, 0.22);
+    color: #c8d4e0;
+}

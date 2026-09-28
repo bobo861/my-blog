@@ -1,0 +1,15 @@
+{{- /*
+  代码块渲染钩子。
+
+  没有指定语言的围栏块（``` 直接换行）当作旁注渲染成卡片，
+  而不是代码块 —— 这类块在笔记里通常是一小段说明文字，
+  用代码块的样式显示很难看。
+
+  指定了语言的（```python、```bash）仍然走正常的高亮渲染。
+*/ -}}
+{{- if or (eq .Type "") (eq .Type "note") -}}
+  <div class="note">{{ .Inner }}</div>
+{{- else -}}
+  {{- $result := transform.HighlightCodeBlock . -}}
+  {{- $result.Wrapped -}}
+{{- end -}}
